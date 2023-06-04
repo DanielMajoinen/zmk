@@ -16,7 +16,12 @@
 #include <drivers/ext_power.h>
 #include <zephyr/drivers/display.h>
 
+#ifndef CONFIG_LVGL_DISPLAY_DEV_NAME
+#define ZMK_DISPLAY_NAME ""
+#else
 #define ZMK_DISPLAY_NAME CONFIG_LVGL_DISPLAY_DEV_NAME
+#endif
+
 
 #if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 
