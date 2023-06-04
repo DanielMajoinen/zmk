@@ -14,7 +14,7 @@
 #include <zephyr/settings/settings.h>
 #include <zephyr/drivers/gpio.h>
 #include <drivers/ext_power.h>
-#include <drivers/display.h>
+#include <zephyr/drivers/display.h>
 
 #define ZMK_DISPLAY_NAME CONFIG_LVGL_DISPLAY_DEV_NAME
 
